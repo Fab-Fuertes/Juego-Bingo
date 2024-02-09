@@ -1,0 +1,119 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+small{
+    display: none;
+}
+
+body{
+
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background:linear-gradient(130deg, yellow,  orange, red);
+}
+
+.contenedor{
+    max-width: 700px;
+    width: 100;
+    padding: 25px 30px;
+    background-color: bisque;
+    border-radius: 10px;
+
+}
+
+.contenedor .titulo {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contenedor form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10 12 0;
+}
+
+form .grupo-form{
+
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+
+form span{
+    display: block;
+    font-weight:500;
+    margin-bottom: 5px;
+}
+
+.grupo-form input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.grupo-form input:focus,
+.grupo-form input:valid{
+    border-color: burlywood;
+}
+
+form .button{
+    width: 100%;
+    height: 40px;
+    margin: 40px 0;
+
+}
+
+
+form .button input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: linear-gradient(130deg, orange, yellow);
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+form .button input:hover{
+    background: linear-gradient(130deg, yellow, orange  );
+}
+
+@media (max-width: 584px){
+    .contenedor{
+        max-width: 100%;
+    }
+
+    form .grupo-form{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .contenedor form{
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+
+    .contenedor form::-webkit-scrollbar{
+        width: 0;
+    }
+
+    form .button{
+        margin: 20px 0;
+    }
+
+}
