@@ -1,8 +1,7 @@
 
 function getRandom(){
-    let start = document.getElementById('start').value;
-    let end =document.getElementById('end').value;
-    document.getElementById('number').innerHTML = 'El numero es:' + getRandomBetween(parseInt(start), parseInt(end));
+    document.getElementById('number').innerHTML = 'El numero es:' + getRandomBetween(parseInt(1), parseInt(50));
+    let turnos= +1;
 
 }
 
