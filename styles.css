@@ -153,7 +153,136 @@ h1, h4{
     text-align: center;
 }
 
+.board1{
+    width: 360px;
+    height: 360px;
+    background-color:coral;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+  
+}
+
+
+.grid-container1{
+
+    display:grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 20px;
+
+
+}
+
+
+.grid-container1 div{
+    background-color:  #58aa10;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 50px;
+
+}   
+
+.grid-container2{
+
+    display:grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin: 20px;
+
+
+
+}
+
+
+.grid-container2 div{
+    background-color:  #58aa10;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 50px;
+
+}   
+
+.grid-container3{
+
+    display:grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin: 20px;
+
+
+
+}
+
+
+.grid-container3 div{
+    background-color:  #58aa10;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 50px;
+
+} 
+
+.grid-container4{
+
+    display:grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin: 20px;
+}
+
+.grid-container4 div{
+    background-color:  #58aa10;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 50px;
+
+} 
 
 
 
 
+
+
+
+
+
+
+
+  
