@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles.css">
     
     <title> Registro </title>
-
 </head>
 
 <body>
@@ -24,111 +23,121 @@
             
             <div class="grupo-form">
                 <span>Nombre Jugador 1</span>
-                <input type="text" placeholder="Ingrese nombre del jugador 1:" required>
+                <input type="text">
                 <small>Por favor ingrese el dato</small>
             </div>
 
             <div class="grupo-form">
                 <span>Nombre Jugador 2</span>
-                <input type="text" placeholder="Ingrese nombre del jugador 2:" required>
+                <input type="text">
                 <small>Por favor ingrese el dato</small>
             </div>
             
             <div class="grupo-form">
                 <span>Nombre Jugador 3</span>
-                <input type="text" placeholder="Ingrese nombre del jugador 3:" required>
+                <input type="text">
                 <small>Por favor ingrese el dato</small>
             </div>
 
             <div class="grupo-form">
                 <span>Nombre Jugador 4</span>
-                <input type="text" placeholder="Ingrese nombre del jugador 4:" required>
+                <input type="text">
                 <small>Por favor ingrese el dato</small>
             </div>
 
             <div class="grupo-form">
-                <span>Tamaño Carton</span>
-                <input type="number" class="dimensiones" id="dimensiones" placeholder="Número de Filas y Columnas (3, 4, 5):">
-                <small>Por favor ingrese el dato</small>
+                <span>Tamaño Carton (3,4,5):</span>
+                <button id="tamano-tres">3</button>
+                <button id="tamañoCuatro">4</button>
+                <button id="tamañoCinco">5</button>
+
             </div>
-            </a>
 
             <div class="button">
-                <input type="button" value="Iniciar Juego">
-            </div>
-            </a>
-
-            <div class="card-container">
-                <h1> Número: </h1>         
-                <div class="buttons">
-                <input type="button" class="btnSubmit" value="Nuevo número" onclick="getRandom()">
-        
-                </div>
-                <h2 class="number" id="number"></h2>
-        
+                <input type="button" value="Iniciar Juego" onclick="">
             </div>
 
         </form>
 
-    </div>
-
-    <div class="grid-container1">
-
-        <div>       27     </div>
-        <div>       36     </div>
-        <div>       48     </div>
-        <div>       29     </div>
-        <div>       16     </div>
-        <div>       5      </div>
-        <div>       3      </div>
-        <div>       22     </div>
-        <div>       13     </div>
-
-    </div>
-
-    <div class="grid-container2">
-
-        <div>       50     </div>
-        <div>       11     </div>
-        <div>       20     </div>
-        <div>       47     </div>
-        <div>       10     </div>
-        <div>       4      </div>
-        <div>       45      </div>
-        <div>       15     </div>
-        <div>       13     </div>
-
-    </div>
-
-
-    <div class="grid-container3">
-
-        <div>       26     </div>
-        <div>       24     </div>
-        <div>       44     </div>
-        <div>       8    </div>
-        <div>       49     </div>
-        <div>       12      </div>
-        <div>       9      </div>
-        <div>       22     </div>
-        <div>       28     </div>
-
-    </div>
-
-    <div class="grid-container4">
-
-        <div>       42     </div>
-        <div>       32     </div>
-        <div>       17     </div>
-        <div>       33    </div>
-        <div>       39    </div>
-        <div>       19    </div>
-        <div>       23    </div>
-        <div>       27    </div>
-        <div>       2     </div>
-
-    </div>
+        <div class="card-container">
+            <h1> Número: </h1>         
+            <div class="buttons">
+            <input type="button" class="btnSubmit" value="Nuevo número" onclick="getRandom()">
     
+            </div>
+            <h2 class="number" id="number"></h2>
+    
+        </div>
+
+    </div>
+
+    <div id="grid-flex1">
+
+        <div id="grid-container1">
+
+            <div class="grid-item">       27     </div>
+            <div class="grid-item">       36     </div>
+            <div class="grid-item">       48     </div>
+            <div class="grid-item">       29     </div>
+            <div class="grid-item">       16     </div>
+            <div class="grid-item">       5      </div>
+            <div class="grid-item">       3      </div>
+            <div class="grid-item">       22     </div>
+            <div class="grid-item">       13     </div>
+
+        </div>
+
+
+        <div id="grid-container2">
+
+            <div class="grid-item">       50     </div>
+            <div class="grid-item">       11     </div>
+            <div class="grid-item">       20     </div>
+            <div class="grid-item">       47     </div>
+            <div class="grid-item">       10     </div>
+            <div class="grid-item">       4      </div>
+            <div class="grid-item">       45      </div>
+            <div class="grid-item">       15     </div>
+            <div class="grid-item">       13     </div>
+
+        </div>
+    
+    </div>
+
+    
+    <div id="grid-flex2">
+
+
+        <div id="grid-container3">
+
+            <div class="grid-item">       26     </div>
+            <div class="grid-item">       24     </div>
+            <div class="grid-item">       44     </div>
+            <div class="grid-item">       8    </div>
+            <div class="grid-item">       49     </div>
+            <div class="grid-item">       12      </div>
+            <div class="grid-item">       9      </div>
+            <div class="grid-item">       40     </div>
+            <div class="grid-item">       28     </div>
+
+        </div>
+
+        <div id="grid-container4">
+
+        <div class="grid-item">       42     </div>
+        <div class="grid-item">       32     </div>
+        <div class="grid-item">       17     </div>
+        <div class="grid-item">       33    </div>
+        <div class="grid-item">       39    </div>
+        <div class="grid-item">       19    </div>
+        <div class="grid-item">       23    </div>
+        <div class="grid-item">       27    </div>
+        <div class="grid-item">       2     </div>
+
+        </div>
+
+
+    </div>
 
 </body>
 

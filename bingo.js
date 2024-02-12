@@ -6,28 +6,20 @@ function getRandom(){
 }
 
 
+
 function getRandomBetween(start, end){
     return Math.floor(Math.random()*(end-start+1)) +start;
 }
 
+const tamanoTres = document.getElementById('tamano-tres');
 
-let numeroFicha= getRandomBetween(1, 50)
+tamanoTres.addEventListener('click', () => {
+    let hide = document.getElementById('grid-container1');
+    currentDisplay = hide.style.display;
 
-// let filas = document.getElementById('dimensiones').value;
-// let columnas = document.getElementById('dimensiones').value;
-
-// function llenarMatrizAleatoria(filas, columnas) {
-
-//     let matriz = [];
-//     for (let i = 0; i < filas; i++) {
-//       matriz[i] = [];
-//       for (let j = 0; j < columnas; j++) {
-//         matriz[i][j] = getRandomBetween(1,50); 
-//       }
-//     }
-//     return matriz;
-// }
-
-
-// let matrizAleatoria = llenarMatrizAleatoria(filas, columnas);
-
+    if (currentDisplay === 'none') {
+        hide.style.display = 'block';
+    } else {
+        hide.style.display = 'none';
+    }
+});

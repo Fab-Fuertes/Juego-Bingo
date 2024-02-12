@@ -25,6 +25,7 @@ body{
     padding: 25px 30px;
     border-radius: 10px;
     background:linear-gradient(130deg, yellow,  orange, red);
+    flex-wrap: wrap;
     
 
 }
@@ -62,6 +63,7 @@ form span{
     padding-left: 15px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .grupo-form input:focus,
@@ -171,9 +173,24 @@ h1, h4{
   
 }
 
+#grid-flex1{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#grid-flex2{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
-.grid-container1{
+
+#grid-container1{
 
     display:grid;
     background-color: rgb(255, 255, 255);
@@ -188,7 +205,7 @@ h1, h4{
 }
 
 
-.grid-container1 div{
+#grid-container1 div{
     background-color:  #58aa10;
     border: 1px solid black;
     color: white;
@@ -196,9 +213,10 @@ h1, h4{
     padding: 1rem;
     line-height: 50px;
 
+
 }   
 
-.grid-container2{
+#grid-container2{
 
     display:grid;
     background-color: #58aa10; 
@@ -215,7 +233,7 @@ h1, h4{
 }
 
 
-.grid-container2 div{
+#grid-container2 div{
     background-color:  #58aa10;
     border: 1px solid black;
     color: white;
@@ -225,7 +243,7 @@ h1, h4{
 
 }   
 
-.grid-container3{
+#grid-container3{
 
     display:grid;
     background-color: rgb(255, 255, 255);
@@ -242,7 +260,7 @@ h1, h4{
 }
 
 
-.grid-container3 div{
+#grid-container3 div{
     background-color:  #58aa10;
     border: 1px solid black;
     color: white;
@@ -252,7 +270,7 @@ h1, h4{
 
 } 
 
-.grid-container4{
+#grid-container4{
 
     display:grid;
     background-color: rgb(255, 255, 255);
@@ -265,7 +283,7 @@ h1, h4{
     margin: 20px;
 }
 
-.grid-container4 div{
+#grid-container4 div{
     background-color:  #58aa10;
     border: 1px solid black;
     color: white;
@@ -274,6 +292,9 @@ h1, h4{
     line-height: 50px;
 
 } 
+
+
+
 
 
 
